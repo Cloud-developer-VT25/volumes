@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <h1>Pokédex</h1>
+    <section class="pokemon-grid">
+      {% for p in pokemons %}
+      <article class="card">
+        <section class="header {{ p['types'][0]}}">
+          <h3 class="name">{{ p['name']|capitalize }}</h3>
+          <img src="{{ p['sprite'] }}" alt="{{ p['name'] }}" />
+          <footer>
+            {% for t in p['types'] %}
+            <span class="type">{{ t|capitalize }}</span>
+            {% endfor %}
+          </footer>
+        </section>
+        <section class="stats">
+          <h4 class="heading">Base stats</h4>
+          <article class="stat">
+            <span class="text">HP</span>
+            <span class="text">35</span>
+          </article>
+          <article class="stat">
+            <span class="text">Attack</span>
+            <span class="text">55</span>
+          </article>
+          <article class="stat">
+            <span class="text">Defense</span>
+            <span class="text">90</span>
+          </article>
+          <article class="stat">
+            <span class="text">Speed</span>
+            <span class="text">90</span>
+          </article>
+        </section>
+      </article>
+      {% endfor %}
+    </section>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  background: linear-gradient(135deg, #ff0000 0%, #ffffff 50%, #0075be 100%);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ffcb05;
+  text-shadow: -2px -2px 0 #2a75bb, 2px -2px 0 #2a75bb, -2px 2px 0 #2a75bb,
+    2px 2px 0 #2a75bb;
+  margin-bottom: 30px;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s, box-shadow 0.25s;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 0.2rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: left;
+  margin-left: 0.5rem;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 0.5rem;
+}
+
+.stat:first-child {
+  padding-top: 0.5rem;
+}
+
+.stat:last-child {
+  padding-bottom: 0.5rem;
+}
+
+img {
+  width: 140px;
+  margin: 10px 0;
+}
+
+.name {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0.8rem 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: auto;
+}
+
+.type {
+  display: inline-block;
+  margin: 5px 3px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-color: oklab(0.999994 0.0000455678 0.0000200868 / 0.5);
+  background-color: oklab(0.999994 0.0000455678 0.0000200868 / 0.5);
+}
+
+.text {
+  font-size: 14px;
+}
+
+.fire {
+  background-color: #f08030;
+}
+.water {
+  background-color: #6890f0;
+}
+.grass {
+  background-color: #78c850;
+}
+.electric {
+  background-color: #f8d030;
+  color: black;
+}
+.ice {
+  background-color: #98d8d8;
+}
+.fighting {
+  background-color: #c03028;
+}
+.poison {
+  background-color: #a040a0;
+}
+.ground {
+  background-color: #e0c068;
+  color: black;
+}
+.flying {
+  background-color: #a890f0;
+}
+.psychic {
+  background-color: #f85888;
+}
+.bug {
+  background-color: #a8b820;
+}
+.rock {
+  background-color: #b8a038;
+}
+.ghost {
+  background-color: #705898;
+}
+.dragon {
+  background-color: #7038f8;
+}
+.dark {
+  background-color: #705848;
+}
+.steel {
+  background-color: #b8b8d0;
+}
+.fairy {
+  background-color: #ee99ac;
+}
+.normal {
+  background-color: #a8a878;
+}
